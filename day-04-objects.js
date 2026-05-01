@@ -23,3 +23,5 @@ const getScores = (first, ...rest) => {
 };
 
 getScores(88,45,72,91,55);
+
+// Thank you
