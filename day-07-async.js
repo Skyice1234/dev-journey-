@@ -46,11 +46,13 @@ showWeather();
 // ====== PART 4 - Async/Await with error handling ======
 const getUserData = async (id) => {
     try {
-        if(id<0) throw new Error("Invalid ID!")
-            const response = await fetch(`https://jsonplacehilder.typicode.com/users/${id}`);
+        if(id <= 0) throw new Error("Invalid ID!")
+            const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
         const user = await response.json();
         console.log (`User: ${user.name}, Email: ${user.email}`);
     } catch (error) {
         console.log("Caught error:", error.message);
     }
 };
+getUserData(1);
+getUserData(-1);
