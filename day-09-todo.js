@@ -16,6 +16,7 @@ const addTodo = () => {
   <button class ="delete-btn" onclick="deleteTodo(this)">delete</button>
   `;
 
+  
   todoList.appendChild(todoItem);
   input.value = "";
 };
