@@ -1,12 +1,27 @@
-import Greeting from "./Greeting";
+// import Greeting from "./Greeting";
+
+
+// function App() {
+//   return(
+//     <div>
+//       <Greeting name="Emmanuel" isLearning={true}/>
+//       <Greeting name="Ann" isLearning={false}/>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import Counter from "./Counter";
+import Toggle from "./Toggle";
 
 function App() {
-  return(
+  return (
     <div>
-      <Greeting name="Emmanuel" isLearning={true}/>
-      <Greeting name="Ann" isLearning={false}/>
+      <Counter/>
+      <Toggle/>
     </div>
   );
 }
 
-export default App;
+export default App
