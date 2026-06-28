@@ -13,6 +13,7 @@
 // export default App;
 
 import Counter from "./Counter";
+import GitHubCard from "./GitHubCard";
 import Toggle from "./Toggle";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <div>
       <Counter/>
       <Toggle/>
+      <GitHubCard/>
     </div>
   );
 }
